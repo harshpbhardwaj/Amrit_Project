@@ -30,6 +30,12 @@ app.use(bodyParser.json());
 
 app.use(express.json());
 
+// new harsh
+app.get('/', (req, res) => {
+    res.send('<h1>Welcome to User Comment Server!</h1>')
+})
+// end new harsh
+
 // Route for post data
 app.post('/api/users', async (req, res) => {
     try {
